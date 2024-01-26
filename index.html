@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <h1>To Do List</h1>
+        <input type="text" id="inputField">
+        <button id="button">+</button>
+        <div class="to-do" id="addTodo"></div>
+    </div>
+</body>
+<script>
+    let container = document.getElementById('addTodo')
+    let inputField = document.getElementById('inputField')
+    let button = document.getElementById('button')
+
+    button.addEventListener('click',function(){
+       let paragraph = document.createElement('p')
+       paragraph.classList.add('paragraph-paragraph-styling')
+       paragraph.innerText = inputField.value;
+       container.appendChild(paragraph)
+       button,addEventListener('click',function(){
+        inputField.value = "";
+       })
+       paragraph.addEventListener('click',function(){
+        paragraph.style.textDecoration = "line-through"
+       })
+       paragraph.addEventListener('dblclick',function(){
+        container.removeChild(paragraph)
+       })
+    })
+    
+</script>
+</html>

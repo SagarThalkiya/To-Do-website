@@ -1,0 +1,45 @@
+html{
+    background-color: #212121;
+}
+h1{
+    font-family:Arial, Helvetica, sans-serif;
+    color: aliceblue;
+}
+p{
+    background-color: whitesmoke;
+}
+#container{
+    width: auto;
+    margin: auto;
+    text-align: center; 
+}
+#inputField{
+    height: 20px;
+    width: 250px;
+    font-size:large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#button{
+    display: inline-block;
+    position: relative;
+    height: 23px;
+    border: none;
+    margin-left:5px ;
+    background-color: yellow;
+}
+
+#addTodo{
+    border: white;
+    cursor: pointer;
+    width: 35%;
+    
+    margin-left: 228px;
+    background-color: blanchedalmond;
+}
+
+.paragraph-styling{
+    margin: 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
