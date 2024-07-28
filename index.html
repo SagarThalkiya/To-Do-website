@@ -13,7 +13,6 @@
         <button id="button">+</button>
         <div class="to-do" id="addTodo"></div>
     </div>
-    
 </body>
 <script>
     let container = document.getElementById('addTodo')
@@ -25,7 +24,7 @@
        paragraph.classList.add('paragraph-paragraph-styling')
        paragraph.innerText = inputField.value;
        container.appendChild(paragraph)
-       button,addEventListener('click',function(){
+       button.addEventListener('click',function(){
         inputField.value = "";
        })
        paragraph.addEventListener('click',function(){
